@@ -1,0 +1,129 @@
+
+body {
+    background-color: lavender;
+    margin: 0;
+    padding: 0;
+    background-image: url(portfolio.jpg);
+}
+
+header {
+    text-align: center;
+    padding: 0 5%;
+}
+
+
+.nav-container {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+    border: 2px solid black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px; 
+
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: black; 
+    font-size: 20px; 
+    font-weight: bold; 
+    
+}
+
+nav a:hover {
+    background-color: orange;
+    color: white; 
+}
+
+h1 {
+    font-size: 40px; 
+    border: 2px solid black;
+    color: black;
+    background-color: lightskyblue;
+    font-family: cursive;
+    text-align: center;
+    padding: 8px;
+    margin: 40px auto; /* Center the heading */
+    border-radius: 10px;
+    font-weight: bold;
+    max-width: 90%; /* Ensure it fits within the container */
+    box-sizing: border-box; /
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    border: 3px solid #6C5B7B; 
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: black;
+    font-size: 2em;
+    margin: 10px 0;
+    font-family:cursive;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.skills li{
+    font-size:20px;
+}
+.intro p{
+    font-size:20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6C5B7B; /* Deep Lavender */
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        margin: 15px auto;
+    }
+
+    section {
+        font-size: 1em;
+        padding: 15px;
+        margin: 15px auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+        margin: 10px auto;
+    }
+
+    section {
+        font-size: 0.9em;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
