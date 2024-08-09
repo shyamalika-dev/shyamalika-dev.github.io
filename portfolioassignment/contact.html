@@ -9,18 +9,35 @@
 <body> 
     <header>
         <nav>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li><br>
-            </ul>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">My Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact me</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1>Contact Me</h1>
     </header>
 
     <main>
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: abcdf1234@gmail.com</p>
-            <p>Phone: 9989216626</p>
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Phone number should be 10 digits." required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 

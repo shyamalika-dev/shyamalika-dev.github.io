@@ -55,7 +55,11 @@ header, p {
     background-color: orange; 
     color: white; 
 }
-
+.nav-links a.active{
+    font-weight: bold;
+    color: purple; 
+    background-color: lightblue;
+}
 
 h1 {
     font-size: 40px; 

@@ -1,16 +1,15 @@
 body {
     background-image: url('portfolio.jpg');
+    background-size: cover;
+    background-position: center;
     margin: 0;
     font-family: Arial, sans-serif;
-
 }
 
 header {
     text-align: center;
     padding: 10px;
-    background-color: lightblue;
-    margin:10px 20px 0px;
-    border: 2px solid black;
+    margin: 10px 20px 0;
     border-radius: 5px;
 }
 
@@ -18,33 +17,60 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
+.nav-container {
+    background-color: lightblue; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    border: 2px solid black; 
+}
+
+.nav-links {
+    list-style: none; 
     padding: 0;
     margin: 0;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.nav-links li {
+    border: 2px solid black; 
+    border-radius: 10px; 
+    background-color: lightgoldenrodyellow; 
+    padding: 8px 20px; 
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center; 
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-
+.nav-links a {
+    text-decoration: none; 
+    color: black; 
+    font-size: 14px; 
+    font-weight: bold; 
+    display: block; 
 }
-nav a:hover{
-    color: orange;
-    border: 1px solid black;
-} 
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: orange; 
+    color: white; 
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    color: purple; 
+    background-color: lightblue;
+}
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
     padding: 40px;
-   
+    box-sizing: border-box; /* Ensures padding is included in the total width/height */
 }
 
 .gallery img {
@@ -52,9 +78,63 @@ nav a:hover{
     height: auto; 
     border: 2px solid black;
     border-radius: 8px;
+    object-fit: cover; /* Ensures images fit well in their grid items */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
+/* Adjusting specific image heights */
+.gallery .tall-image {
+    height: 300px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.gallery .medium-image {
+    height: 180px; /* Adjusted height to better match grid layout */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+footer{
+    text-align:center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: left;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px; /* Ensure consistent spacing */
+    }
+
+    .gallery .tall-image {
+        height: 250px; /* Slightly smaller height for tablets */
+    }
+
+    .gallery .medium-image {
+        height: 160px; /* Slightly smaller height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li {
+        padding: 10px;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        padding: 20px;
+        gap: 10px; /* Ensure consistent spacing */
+    }
+
+    .gallery .tall-image {
+        height: 200px; /* Smaller height for mobile screens */
+    }
+
+  
 }
