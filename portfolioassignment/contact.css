@@ -113,10 +113,16 @@ main {
     color: white;
 }
 
-footer { 
+/*footer { 
     text-align: center;
     padding: 10px;
     color: black;
+}*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6C5B7B; 
+    color: white;
 }
 
 /* Responsive adjustments */
