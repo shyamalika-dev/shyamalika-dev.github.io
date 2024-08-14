@@ -3,7 +3,7 @@ body {
     background-color: lavender;
     margin: 0;
     padding: 0;
-    background-image: url('portfolio.jpg');
+    background-image: url("assets/portfolio.jpg");
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;

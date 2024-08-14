@@ -1,5 +1,5 @@
 body {
-    background-image: url(portfolio.jpg);
+    background-image: url(assets/portfolio.jpg);
     background-size: cover; /* Ensure the background image covers the body */
     background-position: center; /* Center the background image */
     font-family: Arial, sans-serif;
