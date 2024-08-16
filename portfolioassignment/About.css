@@ -1,0 +1,166 @@
+
+body {
+    background-color: lavender;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/portfolio.jpg);
+    background-size: cover; /* Ensure the background image covers the body */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 0 5%;
+}
+
+.nav-container {
+    background-color: lightblue; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    border: 2px solid black; 
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.nav-links li {
+    border: 2px solid black; 
+    border-radius: 10px; 
+    background-color: lightgoldenrodyellow; 
+    padding: 8px 20px; 
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: black; 
+    font-size: 14px; 
+    font-weight: bold; 
+    display: block; /* Make links block elements for easier padding */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: orange; 
+    color: white; 
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    color: purple; 
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 40px; 
+    border: 2px solid black;
+    color: black;
+    background-color: lightskyblue;
+    font-family: cursive;
+    text-align: center;
+    padding: 8px;
+    margin: 40px auto; /* Center the heading */
+    border-radius: 10px;
+    font-weight: bold;
+    max-width: 90%; /* Ensure it fits within the container */
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    border: 3px solid #6C5B7B; 
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: black;
+    font-size: 2em;
+    margin: 10px 0;
+    font-family: cursive;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skills li {
+    font-size: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6C5B7B; /* Deep Lavender */
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to fill the width */
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+
+    .nav-links a {
+        padding: 10px; /* Increase padding for better touch targets */
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 15px auto;
+    }
+
+    section {
+        font-size: 1em;
+        padding: 15px;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        padding: 12px; /* Increase padding for better touch targets */
+        font-size: 18px; /* Adjust font size for readability */
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 10px auto;
+    }
+
+    section {
+        font-size: 0.9em;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
